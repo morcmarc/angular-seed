@@ -1,0 +1,25 @@
+{
+  "name": "angular-seed",
+  "version": "0.1.0",
+  "description": "A simple seed application for angular-based projects",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "seed"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "chai": "^2.1.2",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-uglify": "^1.1.0"
+  },
+  "dependencies": {
+    "angular-router": "0.0.2"
+  }
+}
