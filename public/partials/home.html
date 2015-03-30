@@ -11,7 +11,7 @@
       </div>
     </md-toolbar>
     <md-content class="md-padding">
-      <h2>Welcome, {{ vm.user.name }}!</h2>
+      <h2 id="welcome-message">Welcome, {{ vm.user.name }}!</h2>
       <p>Number of posts: {{ vm.posts.length }}</p>
       <md-button class="md-raised md-primary" ng-click="vm.openSidenav()">Open Sidenav</md-button>
     </md-content>

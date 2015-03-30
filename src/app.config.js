@@ -3,7 +3,14 @@ module.exports = (function() {
 
   angular
     .module('myApp')
-    .config(['$routeProvider', RouteProviderConfig]);
+    .config(Config);
+
+  Config.$inject = ['$routeProvider', '$resourceProvider', '$mdThemingProvider'];
+
+  function Config($routeProvider, $resourceProvider, $mdThemingProvider) {
+    RouteProviderConfig($routeProvider);
+    ThemeProviderConfig($mdThemingProvider);
+  }
 
   function RouteProviderConfig($routeProvider) {
     $routeProvider
@@ -14,4 +21,10 @@ module.exports = (function() {
       });
   }
 
+  function ThemeProviderConfig($mdThemingProvider) {
+    $mdThemingProvider
+      .theme('default')
+      .primaryPalette('blue-grey')
+      .accentPalette('orange');
+  }
 })();

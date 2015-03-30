@@ -4,9 +4,9 @@ module.exports = (function() {
   angular
     .module('myApp.shared', [
       'ngResource'
-    ])
-    .constant('apiUri', 'http://jsonplaceholder.typicode.com');
+    ]);
 
+  var Constants   = require('./shared.constants');
   var UserService = require('./services/user.service');
   var PostService = require('./services/post.service');
 })();

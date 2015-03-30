@@ -3,18 +3,19 @@ module.exports = (function() {
 
   angular
     .module('myApp', [
-      // --- Angular Providers
+      // - Libraries
       'ngRoute',
       'ngResource',
       'ngMaterial',
-      // --- Application Modules
+      // - Modules
       'myApp.shared',
       'myApp.home'
     ]);
 
-  // Require modules for browserify
+  // - Generic
   var Constants = require('./app.constants');
   var Config    = require('./app.config');
+  // - Modules
   var Shared    = require('./shared/shared.module');
   var Home      = require('./home/home.module');
 })();
