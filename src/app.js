@@ -7,6 +7,7 @@ module.exports = (function() {
       'ngRoute',
       'ngResource',
       'ngMaterial',
+      'ngMdIcons',
       // - Modules
       'myApp.shared',
       'myApp.home'

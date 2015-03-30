@@ -5,7 +5,22 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
 	</head>
 	<body layout="column">
-		<ng-view></ng-view>
+		<section layout="row" flex>
+		  <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+		    <md-toolbar class="md-theme-teal">
+		      <h1 class="md-toolbar-tools">Sidenav Left</h1>
+		    </md-toolbar>
+	    </md-sidenav>
+	    <md-content flex>
+		    <md-toolbar>
+		      <div class="md-toolbar-tools">
+		        <h1>Angular Seed Application</h1>
+		      </div>
+		    </md-toolbar>
+		    <!-- Main view -->
+		    <ng-view></ng-view>
+	    </md-content>
+	  </section>
 
 		<script src="/lib/angular/angular.min.js"></script>
 		<script src="/lib/angular-route/angular-route.min.js"></script>
@@ -13,6 +28,7 @@
 		<script src="/lib/angular-resource/angular-resource.min.js"></script>
 		<script src="/lib/angular-animate/angular-animate.min.js"></script>
 		<script src="/lib/angular-material/angular-material.min.js"></script>
+		<script src="/lib/angular-material-icons/angular-material-icons.min.js"></script>
 		<script src="/js/dist/app.js"></script>
 	</body>
 </html>
