@@ -1,6 +1,6 @@
 # Angular Seed Application
 
-A simple and light-weight Angular scaffold for future applications.
+A simple and light-weight Angular scaffold.
 
 ---
 
