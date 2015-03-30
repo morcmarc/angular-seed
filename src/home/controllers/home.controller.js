@@ -7,16 +7,12 @@ module.exports = (function() {
 
   HomeController.$inject = ['$mdSidenav', 'version', 'User', 'Post'];
 
-  var vm;
-
   function HomeController($mdSidenav, version, User, Post) {
-    vm = this;
-    
-    vm.user  = User.get({ userId: 1 });
-    vm.posts = Post.query({ userId: 1 });
+    this.user  = User.get({ userId: 1 });
+    this.posts = Post.query({ userId: 1 });
 
-    vm.openSidenav = function() {
-      $mdSidenav('left').open();
+    this.openSidenav = function() {
+      $mdSidenav('left').toggle();
     };
   }
 })();

@@ -2,9 +2,7 @@ module.exports = (function() {
   'use strict';
 
   angular
-    .module('myApp.shared', [
-      'ngResource'
-    ]);
+    .module('myApp.shared', []);
 
   var Constants   = require('./shared.constants');
   var UserService = require('./services/user.service');

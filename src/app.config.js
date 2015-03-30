@@ -24,7 +24,8 @@ module.exports = (function() {
   function ThemeProviderConfig($mdThemingProvider) {
     $mdThemingProvider
       .theme('default')
-      .primaryPalette('blue')
-      .accentPalette('pink');
+      .primaryPalette('indigo')
+      .accentPalette('pink')
+      .warnPalette('red');
   }
 })();

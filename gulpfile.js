@@ -26,8 +26,10 @@ gulp.task('brwsrfy', function() {
 
 gulp.task('compress', function() {
   gulp.src('public/js/app.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./public/js/dist'))
+    .pipe(uglify({
+      mangle: true
+    }))
+    .pipe(gulp.dest('./public/js/dist'));
 });
 
 gulp.task('default', ['connect', 'watch']);
